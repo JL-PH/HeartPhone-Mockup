@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Services | Joy Green Love</title>
+    <link rel="icon" href="JGL PICS/JL LOGO 3D.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        ::-webkit-scrollbar {
+            width: 0.7em;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: linear-gradient(to bottom, black, gray);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, yellow, orange);
+            border-radius: 10px;
+        }
+
+        @keyframes upupandaway {
+            from {
+                opacity: 0%;
+                transform: translateY(50%);
+            }
+
+            to {
+                transform: translateY(0%);
+            }
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            background-image: linear-gradient(to right, rgb(154, 126, 255), rgb(101, 216, 252));
+            display: block;
+            color: whitesmoke;
+            text-shadow: 0px 0px 1px black;
+            margin: auto;
+
+        }
+
+        .box {
+            position: relative;
+            padding-bottom: 10px;
+            margin: 50px;
+            background: linear-gradient(to bottom, #2c3e50, #000000);
+            border-radius: 50px;
+            padding-top: 10px;
+            animation: upupandaway 2s cubic-bezier(0.0, 0.98, 0.99, 1.0);
+            z-index: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            z-index: 0;
+        }
+
+        hr{
+            border-left: 2px white solid;
+            width: 100%;
+        }
+
+        .box::after{
+            position: absolute;
+            content: "";
+            background: linear-gradient(to bottom, hsl(59, 100%, 50%), hsl(22, 100%, 50%));
+            width: 500px;
+            height: 150%;
+            z-index: -2;
+            animation: rotate 15s infinite linear;
+        }
+
+        .box::before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            inset: 7px;
+            border-radius: 50px;
+            background: linear-gradient(to bottom, #2c3e50, #000000);
+            z-index: -1;
+        }
+
+        @keyframes rotate {
+            0%{
+                transform: rotate(0deg);
+            }
+
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        footer {
+            background-color: rgb(41, 39, 39);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        div img {
+            filter: drop-shadow(2px 1px 1px black);
+            background-color: aliceblue;
+            border-radius: 20px;
+        }
+
+        img {
+            transition: transform 0.2s ease-in-out;
+        }
+
+        img:hover {
+            transform: scale(1.2);
+        }
+
+        @media only screen and (max-width: 990px) {
+            ::-webkit-scrollbar{
+                width: 0em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1 style="text-align: center; font-family: 'Merriweather', cursive; text-shadow: 1px 1px 1px black;">
+            <span style="color: rgb(255, 238, 0);">Joy</span> <span style="color: rgb(32, 196, 32); ">Green</span>
+            <span style="color: rgb(255, 0, 0); ">Love</span> <span style="color: rgb(101, 160, 248); ">Company</span>
+            Services
+        </h1>
+        <hr><br>
+        <p style="margin-left: 15%; margin-right:15%; text-indent: 4em; text-align: justify;">
+            Welcome to Joy Green Love Company, where we provide premium phone services designed to keep you connected
+            and productive. Our team of skilled professionals is dedicated to delivering exceptional customer service
+            and efficient repairs for all types of phones. From screen replacements to battery repairs and software
+            updates, we have the expertise and experience to get your phone up and running again quickly and
+            effectively. In addition, we offer a range of customized phone plans to meet your specific needs and budget.
+            At Joy Green Love Company, we understand the importance of staying connected, and we're committed to
+            providing you with the highest quality service and support. Contact us today to learn more about our
+            services and how we can help you stay connected with confidence.</p>
+        <p style="margin-left: 15%; margin-right:15%; text-indent: 4em; text-align: justify;">
+            At Joy Green Love Company, we're not just another smartphone company - we're your partner in power gaming.
+            We understand that your smartphone isn't just a device for making calls and sending messages - it's an
+            essential tool for staying connected to your friends, your gaming community, and your favorite games. That's
+            why we offer a range of services designed to help you get the most out of your phone, whether you're playing
+            on the go or at home.</p>
+        <br>
+        <p style="text-align: center;"><b>OUR SERVICES INCLUDE:</b></p>
+        <div style="margin-left: 15%; margin-right:15%; text-align: center;">
+            <a href="Services/phone_consultation.html" style="text-decoration: none; color: white;">
+                <img src="JGL PICS/phone-call.png" alt="phone-call"
+                    style="margin: auto; height: 100px; margin-bottom: 30px; border: solid white 4px; padding: 10px; margin-top: 50px;"><br>
+                <b>PHONE CONSULTATION</b></a>
+            <br><br>Not sure which phone is right for your
+            gaming needs? Our expert team of gamers can help you choose the perfect phone based on your preferences
+            and budget. We'll take into account factors like processing power, screen size, battery life, and
+            storage capacity to recommend the best phone for your needs.
+        </div><br>
+
+
+        <div style="margin-left: 15%; margin-right:15%; text-align: center;">
+            <a href="Services/gaming_phone_repair.html" style="text-decoration: none; color: white;" target="_top">
+                <img src="JGL PICS/FixPhone.png" alt="phone-call"
+                    style="margin: auto; height: 100px; margin-bottom: 30px; border: solid white 4px; padding: 10px; margin-top: 60px;"><br>
+                <b>GAMING PHONE REPAIRS</b></a>
+            <br><br>Accidents happen, but don't let a
+            broken phone ruin your gaming experience. Our team of experienced technicians can repair a wide range of
+            issues, from cracked screens to malfunctioning buttons. We use only the highest quality parts and the
+            latest techniques to ensure that your phone is repaired quickly and effectively.
+        </div><br>
+
+
+        <div style="margin-left: 15%; margin-right:15%; text-align: center;">
+            <a href="Services/phone_swap.html" style="text-decoration: none; color: white;">
+                <img src="JGL PICS/phone-accessories.png" alt="phone-call"
+                    style="margin: auto; height: 100px; margin-bottom: 30px; border: solid white 4px; padding: 10px; margin-top: 60px;"><br>
+                <b>PHONE SWAP</b></a>
+            <br><br>Upgrade or downgrade your phone hassle-free with our phone services. Whether you're looking for the
+            latest and greatest features or something simpler, we've got you covered. Take advantage of our services and
+            enjoy an enhanced phone experience with ease.
+        </div><br>
+
+        <div style="margin-left: 15%; margin-right:15%; margin-bottom: 2%; text-align: center;">
+            <a href="Services/internetplans.html" target="_top" style="text-decoration: none; color: white;">
+                <img src="JGL PICS/gamephoneplan.png" alt="phone-call"
+                    style="margin: auto; height: 100px; margin-bottom: 30px; border: solid white 4px; padding: 10px; margin-top: 60px;"><br>
+                <b>INTERNET PLANS</b></a>
+            <br><br>Stay connected to your gaming community
+            with our range of phone plans. We offer plans with unlimited data, high-speed internet, and other
+            features designed specifically for gamers. Plus, our plans are affordable and flexible, so you can
+            choose the one that best fits your budget and gaming needs.
+        </div><br>
+        </ul>
+        <hr>
+        <p
+            style="margin-top: 2%; margin-bottom: 2%; margin-left: 15%; margin-right:15%; text-align: center; color: rgb(173, 173, 173);">
+            At Joy Green Love Company, we're passionate about power gaming, and we're committed to providing you
+            with the tools and services you need to take your gaming to the next level. Contact us today to learn
+            more about our services and how we can help you stay ahead of the competition.
+        </p>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2023 Heart Phone - Joy Green Love Company.&nbsp;&nbsp;All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

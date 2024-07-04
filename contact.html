@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Us | Joy Green Love</title>
+    <link rel="icon" href="JGL PICS/JL LOGO 3D.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        ::-webkit-scrollbar{
+            width: 0.7em;
+        }
+		
+		::-webkit-scrollbar-track{
+			background: linear-gradient(to bottom, black, gray);
+		}
+		
+		::-webkit-scrollbar-thumb{
+			background: linear-gradient(to bottom, yellow, orange);
+			border-radius: 10px;
+		}
+
+        @keyframes fadingha {
+            from {
+                opacity: 0%;
+            }
+
+            to {
+                opacity: 100%;
+            }
+        }
+
+        @keyframes forcontactustitle {
+            from {
+                opacity: 0%;
+                transform: translateY(-100%);
+            }
+
+            to {
+                opacity: 100%;
+                transform: translateY(0%);
+            }
+        }
+
+        @keyframes forbox1 {
+            from {
+                transform: translateX(-100%);
+            }
+        }
+
+        @keyframes forbox2 {
+            from {
+                transform: translateX(100%);
+            }
+        }
+
+        body {
+            font-family: 'Merriweather', serif;
+            background-color: black;
+            color: black;
+            margin: 0;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        .titlebox {
+            background-image: linear-gradient(black, rgb(43, 43, 43));
+            display: flex;
+            color: white;
+            justify-content: center;
+            text-shadow: 1px 1px 1px black;
+            width: 100%;
+            animation: forcontactustitle 3s ease;
+        }
+
+        .bigbox {
+            display: flex;
+            justify-content: space-around;
+            min-height: 100vh;
+            animation: fadingha 10s ease;
+        }
+
+        .box1 {
+            margin-top: 5%;
+            background-image: linear-gradient(to bottom, gray, black);
+            width: 40%;
+            min-width: 400px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 230px;
+            font-size: 20px;
+            border-radius: 10px;
+            text-shadow: 1px 1px 1px black;
+            animation: forbox1 3s ease;
+            transition: filter 0.5s ease, transform 1s ease;
+        }
+
+        .box2 {
+            margin-top: 5%;
+            background-image: linear-gradient(to bottom, gray, black);
+            width: 40%;
+            min-width: 400px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 230px;
+            font-size: 20px;
+            border-radius: 10px;
+            text-shadow: 1px 1px 1px black;
+            animation: forbox2 3s ease;
+            transition: filter 0.5s ease, transform 1s ease;
+        }
+
+        @media only screen and (max-width: 980px) {
+
+            ::-webkit-scrollbar{
+                width: 0em;
+            }
+
+            .bigbox{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .box1, .box2{
+                justify-content: flex-start;
+                border-radius: 30px;
+                min-height: 40vh;
+                width: 80%;
+                font-size: 3vh;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="titlebox">
+        <h1>CONTACT US</h1>
+    </div>
+    <div class="bigbox">
+        <!--box1-->
+        <div class="box1">
+            <h2 style="color: white; margin-bottom: 7px;">MESSAGE US ON:</h2>
+            <hr color="white" width="100%">
+            <div style="align-items: center; display: flex; margin-top: 15px;">
+                <img style="width: 50px; height: 50px; filter: drop-shadow(1px 1px 1px black);margin-right: 15px;"
+                    src="JGL PICS/email.png">
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlHmgMwCDRHWjjRhLmHcXqkxtqPKSNqGNvcrRhdqmcBTshXSdNflHjSNBTQGNxtQkRQZmg"
+                    style="text-decoration: none; color: white; font-weight: bold;"
+                    target="_blank">pistol325325@gmail.com</a>
+            </div>
+            <div style="align-items: center; display: flex; margin-top: 30px">
+                <img style="width: 50px; height: 50px; filter: drop-shadow(1px 1px 1px black);margin-right: 15px;"
+                    src="JGL PICS/phone-call.png">
+                <a href="tel:+63670233399"
+                    style="text-decoration: none; color: white; font-weight: bold;">+63670233399</a>
+            </div>
+        </div>
+        <!--box2-->
+        <div class="box2">
+            <h2 style="color: white; margin-bottom: 7px;">OUR SOCIAL MEDIA:</h2>
+            <hr color="white" width="100%">
+            <div style="align-items: center; display: flex; margin-top: 15px;">
+                <img style="width: 50px; height: 50px; filter: drop-shadow(1px 1px 1px black);margin-right: 15px;"
+                    src="JGL PICS/fbcon.png">
+                <a href="https://www.facebook.com/MCPEJL.25"
+                    style="text-decoration: none; color: white; font-weight: bold;" target="_blank">John Lloyd
+                    E. Umani</a>
+            </div>
+
+            <div style="align-items: center; display: flex; margin-top: 30px;">
+                <img style="width: 50px; height: 50px; filter: drop-shadow(1px 1px 1px black);margin-right: 15px;"
+                    src="JGL PICS/fbcon.png">
+                <a href="https://www.facebook.com/justine.espedido"
+                    style="text-decoration: none; color: white; font-weight: bold;" target="_blank">Karl Justine
+                    Espedido</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var box1 = document.querySelector(".box1");
+    var box2 = document.querySelector(".box2");
+
+    box1.addEventListener("mouseover", ()=>{
+        box1.style.transform = "translateY(-10px)";
+        box1.style.filter = "brightness(1.2)";
+        box2.style.transform = "translateY(10px)";
+    });
+
+    box1.addEventListener("mouseout", ()=>{
+        box1.style = "none";
+        box2.style = "none";
+    });
+
+    box2.addEventListener("mouseover", ()=>{
+        box1.style.transform = "translateY(10px)";
+        box2.style.transform = "translateY(-10px)";
+        box2.style.filter = "brightness(1.2)";
+    });
+
+    box2.addEventListener("mouseout", ()=>{
+        box1.style = "none";
+        box2.style = "none";
+    });
+</script>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Phone Repair Map</title>
+    <link rel="icon" href="../JGL PICS/JL LOGO 3D.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        ::-webkit-scrollbar {
+            width: 1em;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: linear-gradient(to bottom, black, gray);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, yellow, orange);
+            border-radius: 10px;
+        }
+
+        @keyframes mapanim {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        body {
+            font-family: Merriweather, serif;
+            min-height: 100vh;
+            background-image: linear-gradient(to bottom, rgb(0, 62, 133), rgb(163, 0, 163));
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+
+        .box {
+            box-shadow: 10px 10px 50px black;
+            background-image: linear-gradient(to bottom, rgb(255, 255, 0), orange);
+            color: black;
+            width: 90%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 40px;
+            padding: 40px 20px;
+        }
+
+        iframe {
+            border-radius: 20px;
+            box-shadow: 0px 0px 25px black;
+            animation: mapanim 2s ease-out;
+            width: 100%;
+            height: 100%;
+        }
+
+        h1 {
+            background-image: linear-gradient(to right, rgb(0, 26, 255), rgb(118, 0, 173));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 40px;
+            font-family: Merriweather;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h3 {
+            text-align: center;
+            font-weight: lighter;
+            margin-top: 40px;
+        }
+
+        hr {
+            border: solid 1px black;
+        }
+
+        .center {
+            height: 500px;
+            width: 90%;
+        }
+
+        @media only screen and (max-width: 990px) {
+            h3 {
+                text-align: center;
+                font-weight: lighter;
+                margin-top: 40px;
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+        <a style="display: block; margin-top: 2%; margin-left: 7%; background-color: rgb(41, 41, 41); width: 10%; padding: 8px; border-radius: 10px; text-decoration: none;font-weight: bold; color: rgb(255, 255, 255); align-self: flex-start; text-align: center;"
+            href="../servicesstruct.html" target="_top">Go Back</a>
+
+        <h1>HEART PHONE REPAIR</h1>
+
+        <div class="center">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7717.240548237482!2d121.0579589!3d14.7340479!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b05d33ba8d4d%3A0xe5d9d4b2497eff0f!2sSM%20City%20Fairview!5e0!3m2!1sen!2sph!4v1683440991300!5m2!1sen!2sph"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <h3>Heart Phone repair is available at SM City Fairview - 2nd Floor<br>
+            <hr>
+            Quirino Highway cor. Regalado Ave.,
+            Brgy. Greater Lagro, Novaliches,
+            Quezon City, 1118 Metro Manila, Philippines
+        </h3>
+    </div>
+
+</body>
+
+</html>

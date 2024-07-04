@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Heart Phone La Espedido</title>
+    <link rel="icon" href="../JGL PICS/JL LOGO 3D.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        ::-webkit-scrollbar{
+            width: 0.7em;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: linear-gradient(to bottom, black, gray);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, yellow, rgb(1, 148, 153));
+            border-radius: 10px;
+        }
+
+        @keyframes effect {
+
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1.05);
+                box-shadow: 0px 0px 90px rgb(0, 255, 255);
+            }
+        }
+
+        @keyframes glow{
+            0%{
+                box-shadow: 0px 0px 90px rgb(0, 255, 255);
+            }
+
+            50%{
+                box-shadow: 0px 0px 60px rgb(0, 255, 255);
+            }
+
+            100%{
+                box-shadow: 0px 0px 90px rgb(0, 255, 255);
+            }
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Merriweather', serif;
+            background-color: black;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .productcontainer {
+            background-image: radial-gradient(circle, white, rgb(0, 255, 255)1200px);
+            display: flex;
+            padding: 50px;
+            border-top: solid rgb(1, 148, 153) 5px;
+            border-bottom: solid rgb(1, 148, 153) 5px;
+            color: black;
+            animation: effect 5s forwards, glow 5s ease infinite;
+        }
+
+        .center {
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .center img {
+            margin-right: 100px;
+        }
+
+        .center h1 {
+            font-size: 55px;
+            font-family: 'Cinzel', serif;
+            background: linear-gradient(to right, black, rgb(0, 158, 124));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .description {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            color: black;
+            font-size: 30px;
+            text-align: center;
+            padding: 50px 0px;
+        }
+
+        footer {
+            background-color: rgb(41, 39, 39);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        input {
+            width: 25%;
+            height: 50px;
+            margin: 5px;
+            font-size: 15px;
+            text-align: center;
+            font-family: 'Merriweather', serif;
+        }
+
+        .submit {
+            position: relative;
+            box-sizing: border-box;
+            background-color: #FFD700;
+            color: black;
+            margin: 0;
+            border-radius: 15px;
+            font-size: 15px;
+            width: 300px;
+            text-decoration: none;
+            transition: transform 0.5s ease, background 0.5s ease-in-out;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 0px 2px inset gray;
+            z-index: 1;
+        }
+
+        .submit::after{
+            content: "";
+            position: absolute;
+            background: orange;
+            border-radius: 100px;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            z-index: -1;
+            transform: scaleY(0%);
+            transition: transform 0.4s ease, border-radius 0.4s ease, opacity 0.3s ease;
+        }
+
+        .submit:hover::after{
+            opacity: 1;
+            border-radius: 15px;
+            transform: scaleY(100%);
+        }
+
+        .submit:hover{
+            transform: scale(1.07);
+        }
+
+        .paymentcontainer{
+            width: 1000px;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            
+        }
+
+        .vertirule {
+            height: 30vh;
+            border-left: 2px solid gray;
+            margin: 0 30px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 70vw;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border: solid transparent;
+            border-radius: 20px;
+            box-shadow: 0px 0px 60px gray;
+        }
+
+        th {
+            width: 30%;
+            height: 8vh;
+            border: solid white 1px;
+            background: linear-gradient(to right, rgb(0, 163, 122), rgb(0, 87, 58));
+            color: white;
+        }
+
+        td {
+            border: solid white 1px;
+            background: rgb(156, 196, 184);
+        }
+
+        .description table tr:first-child th{
+            border-top-left-radius: 20px;
+        }
+
+        .description table tr:first-child td{
+            border-top-right-radius: 20px;
+        }
+
+       .description table tr:last-child th{
+            border-bottom-left-radius: 20px;
+        }
+
+        .description table tr:last-child td{
+            border-bottom-right-radius: 20px;
+        }
+
+        .submit img {
+            height: 100px;
+            width: 100px;
+        }
+
+        @media only screen and (max-width:990px) {
+
+            ::-webkit-scrollbar {
+                width: 0em;
+            }
+
+            .center{
+                display: flex;
+                justify-content: center;
+            }
+
+            .center img {
+                margin-right: 100px;
+            }
+
+            .center h1 {
+                width: 50%;
+            }
+
+            .productcontainer {
+                background-image: radial-gradient(circle, white, rgb(0, 255, 255)1200px);
+                display: flex;
+                padding: 50px;
+                border-top: solid rgb(1, 148, 153) 5px;
+                border-bottom: solid rgb(1, 148, 153) 5px;
+                color: black;
+                animation: effect 5s forwards, glow 5s ease infinite;
+                text-align: center;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 90vw;
+                font-size: 1.5rem;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                border: solid transparent;
+                border-radius: 20px;
+                box-shadow: 0px 0px 60px gray;
+            }
+
+            .paymentcontainer {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+
+            .submit {
+                position: relative;
+                box-sizing: border-box;
+                background-color: #FFD700;
+                color: black;
+                margin: 0;
+                border-radius: 15px;
+                font-size: 15px;
+                text-decoration: none;
+                transition: transform 0.5s ease, background 0.5s ease-in-out;
+                width: 90%;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0px 0px 2px inset gray;
+                z-index: 1;
+            }
+
+            .description {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                color: black;
+                font-size: 30px;
+                text-align: center;
+                padding: 50px 0px;
+            }
+
+            .vertirule {
+                display: none;
+            }
+
+            .description .submit:nth-child(1) img {
+                transform: scale(3);
+            }
+
+            .description .paymentcontainer .submit:nth-of-type(2) b{
+                font-size: 300%;
+                color: darkgreen;
+            }
+
+            .description .paymentcontainer .submit:nth-of-type(2) img{
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a style="display: block; margin-top: 2%; margin-left: 2%; background-color: rgb(255, 208, 0); width: 5%; padding: 8px; width: 100px; border-radius: 10px; text-decoration: none;font-weight: bold; color: black; text-align: center;"
+        href="../productsstruct.html" target="_top">Go Back</a>
+
+    <br><br>
+
+    <div class="productcontainer">
+        <div class="center">
+            <img src="../JGL PICS/Heart Phone La Espedido.jpg">
+            <h1>Heart Phone La Espedido</h1>
+            <br>
+        </div>
+    </div>
+    <!--NEWWWWWWWWWWWWWW-->
+    <br>
+    <h2 style="text-align: center;">PHONE SPECIFICATIONS:</h2>
+    <br>
+    <div class="description">
+        <table>
+            <tr>
+                <th>Model</th>
+                <td>Heart Phone La Espedido</td>
+            </tr>
+            <tr>
+                <th>Price</th>
+                <td>&#8369;29, 999</td>
+            </tr>
+            <tr>
+                <th>Chipset</th>
+                <td>Exynos 1080</td>
+            </tr>
+            <tr>
+                <th>Display</th>
+                <td>90Hz FHD + Waterproof</td>
+            </tr>
+            <tr>
+                <th>RAM</th>
+                <td>8 GB</td>
+            </tr>
+            <tr>
+                <th>ROM</th>
+                <td>2 TB</td>
+            </tr>
+            <tr>
+                <th>Network</th>
+                <td>GSM / CDMA / HSPA / EVDO / LTE / 5G</td>
+            </tr>
+            <tr>
+                <th>Operating System</th>
+                <td>Android 14 Beta, Heart OS - Premium v0.8</td>
+            </tr>
+            <tr>
+                <th>Camera</th>
+                <td>75MP Rear | 20MP Front</td>
+            </tr>
+            <tr>
+                <th>Charging</th>
+                <td>20W - USB Type C</td>
+            </tr>
+        </table>
+    </div>
+    <!--newwwwwwwwwwwwwwwwww-->
+    <br>
+    <h2 style="text-align: center;">SELECT YOUR PAYMENT METHOD:</h2>
+    <br>
+    <div class="description">
+        <div class="paymentcontainer">
+        <a class="submit" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BRVAPEYBUWZ7U" target="_top"><img src="../JGL PICS/paypal.png"></a>
+
+        <div class="vertirule"></div>
+        
+        <a class="submit" href="hplaespedidoCOD.html"><img src="../JGL PICS/cash-on-delivery.png" style="filter: drop-shadow(0px 2px 1px);">&nbsp;&nbsp;&nbsp;&nbsp;<b>CASH ON DELIVERY</b></a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2023 Heart Phone - Joy Green Love Company.&nbsp;&nbsp;All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

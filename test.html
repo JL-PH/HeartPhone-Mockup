@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Online Store | Joy Green Love</title>
+
+    <link rel="icon" href="JGL PICS/JL LOGO 3D.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        @keyframes righteffect {
+            from {
+                transform: translateX(-4%);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0%);
+            }
+        }
+
+        @keyframes ShakeItEspedido{
+            0%{
+                transform: translateX(0px);
+            }
+
+            20%{
+                transform: translateX(10px);
+            }
+
+            40%{
+                transform: translateX(-10px);
+            }
+
+            60%{
+                transform: translateX(10px);
+            }
+
+            80%{
+                transform: translateX(-10px);
+            }
+
+            100%{
+                transform: translateX(0px);
+            }
+        }
+
+        body {
+            margin: auto;
+            font-family: 'Merriweather', serif;
+            background-image: linear-gradient(to bottom, #333333, #1a1a1a);
+            color: black;
+            
+        }
+
+        .phonescontainer {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .phones {
+            width: 40%;
+            height: auto;
+            background:
+                linear-gradient(rgb(241, 241, 241) 0 0) padding-box,
+                linear-gradient(to bottom, rgb(17, 0, 255), rgb(255, 30, 0)) border-box;
+            color: black;
+            border-radius: 35px;
+            display: flex;
+            border: solid 6px transparent;
+            opacity: 0;
+        }
+
+        footer {
+            background-color: rgb(41, 39, 39);
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .titlesphone {
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        img {
+            padding: 10px;
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 2%;
+        }
+
+        .buynowbox {
+            background-image: linear-gradient(to right, rgb(228, 156, 2), rgb(230, 195, 0));
+            padding: 10px;
+            border-radius: 40px;
+            padding-left: 25%;
+            padding-right: 25%;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            transition: transform 0.1s ease-in-out;
+        }
+
+        .buynowbox:hover {
+            transform: scale(1.06);
+        }
+
+        .soldoutbox {
+            background-image: linear-gradient(to right, #f44336, #e91e63);
+            padding: 10px;
+            border-radius: 40px;
+            padding-left: 25%;
+            padding-right: 25%;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .containerbuynowbox {
+            justify-content: center;
+            display: flex;
+        }
+
+        .phonescontainer:nth-of-type(2) .phones:nth-of-type(1) .titlesphone .containerbuynowbox:hover{
+            animation: ShakeItEspedido 1.5s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center; color: white">• SMARTPHONES •</h1>
+    <hr>
+    <br><br>
+    <!--PhonesProducts-->
+    <div class="phonescontainer">
+        <div class="phones" style="animation: righteffect 2s ease forwards;">
+            <img src="JGL PICS/Heart Phone Umani Supernova.jpg" alt="Heart Phone Umani Supernova"
+                id="Heart Phone Umani Supernova">
+            <div class="titlesphone">
+                <h3>Heart Phone Umani Supernova</h3>
+                <p>CPU: Dimensity 9200</p>
+                <p>Display: 120Hz Flow Amoled Dot Display</p>
+                <p>RAM: 16GB &nbsp;|&nbsp;&nbsp;ROM: 1TB</p>
+                <div class="containerbuynowbox">
+                    <a class="buynowbox" href="Payments/Heart Phone Umani Supernova.html">₱39, 999 only!</a>
+                </div>
+            </div>
+        </div>
+        <div class="phones" style="animation: righteffect 2s ease forwards; animation-delay: 0.3s;">
+            <img src="JGL PICS/Heart Phone La Espedido.jpg" alt="Heart Phone La Espedido" id="Heart Phone La Espedido">
+            <div class="titlesphone">
+                <h3>Heart Phone La Espedido</h3>
+                <p>CPU: Exynos 1080</p>
+                <p>Display: 90Hz FHD + Waterproof</p>
+                <p>RAM: 8GB &nbsp;|&nbsp;&nbsp;ROM: 5TB</p>
+                <div class="containerbuynowbox">
+                    <a class="buynowbox" href="Payments/Heart Phone La Espedido.html">₱29, 999 only!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="phonescontainer">
+        <div class="phones" style="animation: righteffect 2s ease forwards; animation-delay: 0.6s;">
+            <img src="JGL PICS/Heart Phone Charcoal Edition.jpg" alt="Heart Phone Charcoal Edition"
+                id="Heart Phone Charcoal Edition">
+            <div class="titlesphone">
+                <h3>Heart Phone Charcoal Edition</h3>
+                <p>CPU: Kirin 9000</p>
+                <p>Display: 120Hz FHD</p>
+                <p>RAM: 6GB &nbsp;|&nbsp;&nbsp;ROM: 256GB</p>
+                <div class="containerbuynowbox">
+                    <a class="soldoutbox">Sold Out</a>
+                </div>
+            </div>
+        </div>
+        <div class="phones" style="animation: righteffect 2s ease forwards; animation-delay: 0.9s;">
+            <img src="JGL PICS/Heart Phone Cherry 5G.jpg" alt="Heart Phone Cherry 5G" id="Heart Phone Cherry 5G">
+            <div class="titlesphone">
+                <h3>Heart Phone Cherry 5G</h3>
+                <p>CPU: Snapdragon 780G</p>
+                <p>Display: 90Hz FHD + 5000 Colors</p>
+                <p>RAM: 4GB &nbsp;|&nbsp;&nbsp;ROM: 128GB</p>
+                <div class="containerbuynowbox">
+                    <a class="buynowbox" href="Payments/Heart Phone Cherry 5G.html">₱19, 999 only!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="phonescontainer">
+        <div class="phones" style="animation: righteffect 2s ease forwards; animation-delay: 1.2s;">
+            <img src="JGL PICS/Heart Phone Pro X1.jpg" alt="Heart Phone Pro X1" id="Heart Phone Pro X1">
+            <div class="titlesphone">
+                <h3>Heart Phone Pro X1</h3>
+                <p>CPU: Snapdragon 8 Gen 2</p>
+                <p>Display: 120Hz + 8k Resolution</p>
+                <p>RAM: 8GB &nbsp;|&nbsp;&nbsp;ROM: 1TB</p>
+                <div class="containerbuynowbox">
+                    <a class="buynowbox" href="Payments/Heart Phone Pro X1.html">₱49, 999 only!</a>
+                </div>
+            </div>
+        </div>
+        <div class="phones" style="animation: righteffect 2s ease forwards; animation-delay: 1.5s;">
+            <img src="JGL PICS/Heart Phone Elite.jpg" alt="Heart Phone Elite" id="Heart Phone Elite">
+            <div class="titlesphone">
+                <h3>Heart Phone Elite</h3>
+                <p>CPU: Helio G80</p>
+                <p>Display: 90Hz FHD + Dynamic Switch Play</p>
+                <p>RAM: 4GB &nbsp;|&nbsp;&nbsp;ROM: 64GB</p>
+                <div class="containerbuynowbox">
+                    <a class="buynowbox" href="Payments/Heart Phone Elite.html">₱7, 999 only!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="phonescontainer">
+        <div class="phones" style="animation: righteffect 2s ease forwards; animation-delay: 1.8s;">
+            <img src="JGL PICS/Heart Phone Sky 9.jpg" alt="Heart Phone Sky 9" id="Heart Phone Sky 9">
+            <div class="titlesphone">
+                <h3>Heart Phone Sky 9</h3>
+                <p>CPU: MT6750T</p>
+                <p>Display: 90Hz FHD + Waterproof</p>
+                <p>RAM: 2GB &nbsp;|&nbsp;&nbsp;ROM: 64GB</p>
+                <div class="containerbuynowbox">
+                    <a class="buynowbox" href="Payments/Heart Phone Sky 9.html">₱6, 999 only!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <footer>
+        <p>Copyright © 2023 Heart Phone - Joy Green Love Company.&nbsp;&nbsp;All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

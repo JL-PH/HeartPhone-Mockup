@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Internet Plans</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="../JGL PICS/JL LOGO 3D.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Spice&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700;800;900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Barcode+39+Text&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Walter+Turncoat&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--font-family: 'Anton', sans-serif;
+font-family: 'Bungee Spice', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Cinzel Decorative', cursive;
+font-family: 'Kanit', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Libre Barcode 39 Text', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Walter Turncoat', cursive;-->
+
+    <style>
+        @keyframes intro {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slide_background {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50%{
+                background-position: 100% 50%;
+            }
+
+            100%{
+                background-position: 0% 50%;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            width: 1em;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: linear-gradient(to bottom, black, gray);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(to bottom, yellow, orange);
+            border-radius: 10px;
+        }
+
+        body {
+            background: linear-gradient(to bottom right, rgb(55, 205, 255), rgb(195, 0, 255));
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            letter-spacing: 1px;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+            animation: intro 3s ease;
+        }
+
+        .backbutton {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            width: 100%;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        a:nth-child(1) {
+            background: linear-gradient(to right, yellow, orange);
+            display: flex;
+            box-shadow: 0px 0px 3px black;
+            font-family: 'Merriweather';
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            width: 50px;
+            padding: 0px 40px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bolder;
+            color: black;
+            margin-left: 10px;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            margin-right: 80%;
+            transition: transform 0.2s ease, background 0.5s ease;
+        }
+
+        a:nth-child(1):hover {
+            background: white;
+            transform: scale(1.1);
+        }
+
+        hr {
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid white;
+        }
+
+        .prod hr{
+            border: 1px solid gray;
+            width: 100%;
+        }
+
+        .prodcontainer {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 500px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, rgb(198, 0, 248), rgb(0, 204, 255), rgb(218, 7, 218), rgb(106, 55, 247));
+            border: 5px rgb(255, 255, 255) solid;
+            background-size: 500%;
+            animation: slide_background 30s ease-in-out infinite;
+        }
+
+        .prod {
+            display: flex;
+            flex-direction: column;
+            background: white;
+            height: 90%;
+            width: 30%;
+            border-radius: 20px;
+            border: solid white 5px;
+            position: relative;
+        }
+
+        .prod img {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom: solid 1px gray;
+            transition: transform 1s ease, border-radius 1s ease, border 2s;
+        }
+
+        .prod img:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            border-radius: 20px;
+            border: solid gray 1px;
+
+        }
+
+        h1 {
+            background: linear-gradient(to bottom right, rgb(198, 0, 248), rgb(0, 140, 255));
+            padding: 20px;
+            color: white;
+            border-radius: 20px;
+            text-shadow: 1px 1px 2px black;
+            font-family: 'roboto';
+            font-weight: bold;
+            border: 5px rgb(255, 255, 255) solid;
+        }
+
+        h3 {
+            color: #5c5c5c;
+            text-shadow: 0px 0px 1px black;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: roboto;
+            text-align: center;
+        }
+
+        p {
+            color: #5c5c5c;
+            text-shadow: 0px 0px 1px black;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+            font-family: roboto;
+            margin-left: 17px;
+            margin-right: 17px;
+        }
+
+        h2 {
+            color: #5c5c5c;
+            text-shadow: 0px 0px 1px black;
+            font-weight: bold;
+            font-size: 18px;
+            font-family: roboto;
+            text-align: center;
+        }
+
+        .apply-now {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 80%;
+            height: 40px;
+            background: rgb(28, 198, 255);
+            color: rgb(34, 34, 34);
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            font-family: kanit;
+            text-decoration: none;
+            animation: apply 5s ease-in-out;
+            transition: transform 0.2s ease, color 0.4s ease;
+        }
+
+        .apply-now:hover {
+            color: white;
+            transform: scale(1.04);
+        }
+
+        footer {
+            background-color: rgb(41, 39, 39);
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            font-family: 'Merriweather';
+        }
+
+        footer p {
+            font-family: 'Merriweather';
+            color: white;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="../servicesstruct.html" target="_top">BACK</a>
+    <hr>
+    <br>
+    <h1>&bull; HEART WIFI &bull;</h1>
+    <br>
+    <div class="prodcontainer">
+        <div class="prod">
+            <img src="../JGL PICS/wifi999.jpg" onclick="location.href='wifi999.html'">
+            <h3>
+                ✔ Upto 120 Mbps<br>
+                ✔ Unlimited Data<br>
+                ✔ Free Netflix for 7 days<br>
+                ✔ 1 month duration<br>
+            </h3>
+            <hr>
+            <p>Fast for smooth browsing, buffer-free streaming, and lag-free online gaming</p>
+            <a href="wifi999.html" class="apply-now">Apply Now</a>
+        </div>
+        <div class="prod">
+            <img src="../JGL PICS/wifi2999.jpg" onclick="location.href='wifi2999.html'">
+            <h3>
+                ✔ Upto 800 Mbps<br>
+                ✔ Unlimited Data<br>
+                ✔ Free Netflix for 18 days<br>
+                ✔ 1 month duration<br>
+            </h3>
+            <hr>
+            <p> Blazing-fast speed for smooth streaming, fast downloads, and low-latency gaming</p>
+            <a href="wifi2999.html" class="apply-now">Apply Now</a>
+        </div>
+        <div class="prod">
+            <img src="../JGL PICS/wifi9999.jpg" onclick="location.href='wifi9999.html'">
+            <h3>
+                ✔ Upto 4,000 Mbps<br>
+                ✔ Unlimited Data<br>
+                ✔ Free Netflix for 1 Month<br>
+                ✔ 2 months duration<br>
+            </h3>
+            <hr>
+            <p>Lightning-fast connection for handling massive data and applications</p>
+            <a href="wifi9999.html" class="apply-now">Apply Now</a>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+    <h1>&bull; HEART SIM CARD &bull;</h1>
+    <br>
+    <div class="prodcontainer">
+        <div class="prod">
+            <img src="../JGL PICS/simpink.jpg" onclick="location.href='simpink.html'">
+            <h2 style="margin: 0 20px; margin-top: 15px">
+                <span style="color: rgb(255, 0, 179); text-shadow: 0px 0px 1px black">"STYLISH PINK SIMCARD"</span>
+                <hr>
+                <div>
+                    Perfect for social media enthusiasts, this simcard offers fast and reliable data connectivity to
+                    help you stay connected on all your favorite social media
+                    platforms. Browse, post, and share all your favorite content without any lag or interruptions.
+                </div>
+            </h2>
+            <a href="simpink.html" class="apply-now">Order Now</a>
+        </div>
+        <div class="prod" onclick="location.href='simblue.html'">
+            <img src="../JGL PICS/simblue.jpg">
+            <h2 style="margin: 0 20px; margin-top: 15px">
+                <span style="color: rgb(0, 102, 255); text-shadow: 0px 0px 1px black">"POWERFUL BLUE SIMCARD"</span>
+                <hr>
+                <div>
+                    Perfect for gamers, streamers, and high-speed data users. It offers super fast data connectivity for playing your favorite games, streaming videos, and more. Stay connected all day with great and powerful features for all your communication needs.
+                </div>
+                
+            </h2>
+            <a href="simblue.html" class="apply-now">Order Now</a>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+    <footer>
+        <p>Copyright &copy; 2023 Heart Phone - Joy Green Love Company.&nbsp;&nbsp;All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
