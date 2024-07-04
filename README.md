@@ -1,10 +1,10 @@
 # HeartPhone Website Mockup
 
-Welcome to the HeartPhone Website Mockup! This project was created during my first year of college as an exercise in building a functional website front end using HTML, CSS, and JavaScript. The site features a mock-up of a phone selling platform with a responsive design and PayPal payment integration (though no actual payments are processed, as the phones are not real).
+Welcome to the HeartPhone Website Mockup! This project was created during my first year of college as an exercise in building a functional website front end using HTML and CSS styles. The site features a mock-up of a phone selling platform with a responsive design and PayPal payment integration (though no actual payments are processed, as the phones are not real).
 
 ## Features
 
-- **HTML, CSS, and JavaScript**: Built with foundational web technologies.
+- **HTML and CSS**: Built with foundational web technologies.
 - **Responsive Design**: Adjusts to different screen sizes for better user experience on mobile and desktop devices.
 - **PayPal Integration**: Includes a PayPal payment button for demonstration purposes (do not make real payments).
 - **Colorful Design**: Reflects my early experimentation with web design aesthetics.
