@@ -28,7 +28,7 @@ Feel free to explore the code and use this project as a template for your own le
 2. Open homestruct.html in your web browser to view the website.
 
 ## License
-This project uses a dual-license approach. Read the licenses before using anything in this repository. For more details, see the ![CODE LICENSE](`./CODE LICENSE`) and ![ASSET LICENSE](`./ASSET LICENSE`) sections below.
+This project uses a dual-license approach. Read the licenses before using anything in this repository. For more details, see the ![CODE LICENSE](CODE%20LICENSE) and ![ASSET LICENSE](ASSET%20LICENSE) sections below.
 
 ## Disclaimer
 IMPORTANT: The phones listed on this website are not real, and any payments made through the PayPal button are for demonstration purposes only. Please do not attempt to make real payments using this mock-up site.
